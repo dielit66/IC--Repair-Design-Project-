@@ -36,6 +36,10 @@ li{
 	
 }
 
+.nav-link:hover{
+	color: #E3B873;
+}
+
 .nav-brand{
 	display: flex ;
 	align-items: center;
@@ -85,10 +89,12 @@ li{
 }
 
 .background-image1{
-	background-image: url(/img/bg1.jpg);
+	background-image: url(img/bg1.jpg);
+	-moz-bac
 	background-size: cover;
 	height: 707px;
 	position: relative;
+	
 
 }
 
@@ -104,6 +110,7 @@ li{
 }
 
 .page1-title span{
+	font-family: "Yeseva One", 'Times New Roman', Times, serif;
 	color: #E3B873;
 }
 
@@ -113,9 +120,6 @@ li{
 	display: flex;
 	flex-direction: column;
 	margin: 194px 0 0 50px;
-	
-	
-
 }
 
 .page1-title{
@@ -132,7 +136,7 @@ li{
 	font-weight: normal;
 	font-size: 22px;
 	line-height: 36px;
-	margin-bottom: 42px;
+	margin-bottom: 21px;
 }
 
 .button1{
@@ -145,15 +149,129 @@ li{
 	border: 0;
 	color: white;
 	margin-right: 20px;
+	cursor:pointer;
 }
 
 .button2{
 	outline: 0;
 	border: 0;
-	padding: 20px 41px;
+	padding: 20px 22px;
 	border: 1px solid #FFFFFF;
 	font-size: 11px;
 	border-radius: 2px;
 	background:transparent;
 	color: white;
+	cursor:pointer;
+}
+
+.page2{
+	background-color: black;
+}
+
+.page2-content{
+	margin-left: 50px;
+	padding-top: 107px;
+	padding-bottom: 91px;
+	display: flex;
+	
+}
+
+.page2-content-block1{
+	padding-top: 63px;
+}
+
+.page2-title-block1{
+	margin-bottom: 34px;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	text-transform: uppercase;
+	color: #E3B873;
+}
+
+.page2-text-block1{
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	color: #FFFFFF;
+	margin-bottom: 42px;
+}
+
+.page2-block1-elem{
+	display: flex;
+	flex-wrap: wrap;
+	width: 370px;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+
+.elements{
+	margin-bottom: 34px;
+}
+
+.elements h3{
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #e3b873;
+	margin-bottom: 10px;
+}
+
+.elements p{
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: #ffffff;
+}
+.page2-content-block2{
+	color: rgba(255, 255, 255, 0.3);
+	
+	margin-left: 50px;
+}
+
+.page2-content-block2 ul{
+	display: flex;
+	white-space:nowrap;
+	
+}
+
+.page2-content-block2 ul li{
+	margin-right: 60.5px;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	margin-bottom: 53px;
+	
+}
+
+.page2-content-block2 ul li:hover{
+	color: #E3B873;
+	display: inline-block;
+	vertical-align: baseline;
+	line-height:.95;
+	cursor:pointer;
+	border-bottom: 1px #E3B873 solid;
+	
+}
+
+.slider{
+	
+}
+
+.slider-elements{
+	margin-right: 25px;
+
 }
