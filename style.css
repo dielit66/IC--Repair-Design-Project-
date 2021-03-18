@@ -252,9 +252,6 @@ li {
   border-bottom: 1px #e3b873 solid;
 }
 
-.slider {
-}
-
 .slider-elements {
   margin-right: 25px;
 }
@@ -452,4 +449,161 @@ li {
   font-size: 18px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.wrapper1 {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.page4 {
+  width: 100%;
+  margin-top: 300px;
+  display: flex;
+  margin-left: -80px;
+}
+
+.background-image2 {
+  background-image: url(/img/back2.png);
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 645px;
+  position: relative;
+  margin-left: -150px;
+}
+
+.feature-list {
+  margin-top: 100px;
+  margin-left: 400px;
+}
+.list-element2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.svg-number {
+  position: relative;
+}
+.svg-num {
+  position: absolute;
+  margin-left: 32.5px;
+  margin-bottom: 8px;
+  z-index: 1;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact-block2 {
+  background: #131313;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  width: 507px;
+  height: 530px;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.contact-block2 h2 {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 48px;
+  margin-top: 28px;
+}
+
+.contact-form2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 49px;
+}
+.input-name1 {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  outline: 0;
+  width: 85%;
+  height: 35px;
+  margin-bottom: 48px;
+}
+
+.input-phone1 {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  outline: 0;
+  width: 85%;
+  height: 35px;
+  margin-bottom: 48px;
+}
+
+.input-email1 {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  outline: 0;
+  width: 85%;
+  height: 35px;
+  margin-bottom: 48px;
+}
+
+.checkbox1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: -30px;
+}
+
+.checkbox1 input {
+  margin-right: 8px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.button4 {
+  width: 213px;
+  height: 51px;
+  margin-top: 25px;
+  margin-left: 38.8%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.pig {
+  display: flex;
+  margin-top: 55px;
+  align-items: center;
+}
+
+.pig-text {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: -20px;
+  color: #e3b873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
