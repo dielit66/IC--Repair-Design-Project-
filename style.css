@@ -824,3 +824,171 @@ li {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.background-image4 {
+  background-image: url(img/bg4.jpg);
+  background-size: cover;
+  height: 954px;
+  position: relative;
+}
+
+.background-image4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.background-image4 .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-block3 {
+  position: absolute;
+  z-index: 100;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 34.4px 181.5px;
+  margin-top: -200px;
+}
+
+.contact-block3 h2 {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.input-block {
+  max-width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.checkbox-block {
+  display: flex;
+  justify-content: center;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-block input {
+  display: flex;
+  justify-content: center;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 8.6px;
+}
+
+.name-input1 {
+  width: 231px;
+  margin-bottom: 51px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  outline: 0;
+  margin-top: 51px;
+}
+
+.phone-input1 {
+  width: 231px;
+  margin-bottom: 51px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  outline: 0;
+  margin-top: 51px;
+}
+
+.question-input1 {
+  width: 516px;
+  margin-bottom: 51px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  outline: 0;
+}
+
+.button5 {
+  width: 200px;
+  height: 51px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  outline: none;
+  cursor: pointer;
+  border: 0;
+
+  margin-top: 51px;
+}
+
+.contact-info {
+  position: absolute;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Yeseva One";
+  text-align: center;
+  text-transform: uppercase;
+  color: #e3b873;
+  margin-top: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+
+.contact-info h2 {
+  font-family: "Yeseva One";
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 71px;
+  cursor: pointer;
+}
+
+.map {
+  position: absolute;
+  margin-top: 430px;
+}
+
+.footer {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  font-size: 11px;
+  height: 133px;
+  text-transform: uppercase;
+}
