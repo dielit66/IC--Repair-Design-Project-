@@ -25,6 +25,10 @@ li {
 }
 .header {
   background: #131313;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 83px;
 }
 
 .nav-link {
@@ -606,4 +610,83 @@ li {
   margin-top: -20px;
   color: #e3b873;
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.background-image3 {
+  background-image: url(img/bg3.jpg);
+  background-size: cover;
+  height: 864px;
+  position: relative;
+  margin-top: 342px;
+  margin-bottom: 110px;
+}
+
+.background-image3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fantasies {
+  display: flex;
+
+  position: absolute;
+  margin-left: 5px;
+  justify-content: space-between;
+}
+
+.fantasies-title h2 {
+  margin-top: 137px;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  margin-bottom: 47px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+
+.fantasies-list li {
+  margin: 22px 0;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+  width: fit-content;
+  border-bottom: 1px solid transparent;
+}
+
+.fantasies-list li:hover {
+  cursor: pointer;
+  font-family: Nunito Sans;
+  border-bottom: 1px solid #e3b873;
+  color: #e3b873;
+}
+
+.fantasies-room-block {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 230px;
+}
+
+.fantasies-room-left {
+  display: flex;
+  flex-direction: column;
+  height: 945px;
+  justify-content: space-between;
+  margin-top: -41px;
+}
+
+.fantasies-room-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 43px;
+  height: 936px;
+  justify-content: space-between;
+  margin-top: -112px;
 }
