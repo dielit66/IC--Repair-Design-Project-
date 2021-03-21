@@ -14,8 +14,7 @@ li {
 
 .wrapper {
   max-width: 1256px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .header-content {
   display: flex;
@@ -45,7 +44,7 @@ li {
   display: flex;
   align-items: center;
   color: #e3b873;
-  margin-right: 123px;
+  margin-right: 10%;
 }
 
 .top-nav {
@@ -202,6 +201,10 @@ li {
   margin-bottom: 45px;
 }
 
+.page2-content-block2 img {
+  max-width: 679px;
+}
+
 .elements {
   margin-bottom: 34px;
 }
@@ -227,7 +230,6 @@ li {
 }
 .page2-content-block2 {
   color: rgba(255, 255, 255, 0.3);
-
   margin-left: 50px;
 }
 

@@ -1,0 +1,85 @@
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+
+    margin: 0;
+  }
+  .header button {
+    display: none;
+  }
+
+  .page1-title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 132.83%;
+    text-transform: uppercase;
+  }
+
+  .page1-text {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 135.84%;
+    color: #ffffff;
+  }
+
+  .button1 {
+    width: 100%;
+  }
+
+  .page1-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 338px;
+  }
+
+  .page2-content-block1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page2-content-block2 img {
+    position: relative;
+  }
+
+  .page2-content-block2 ul {
+    display: none;
+  }
+
+  .page4 {
+    display: none;
+  }
+  .fantasies-list {
+    display: none;
+  }
+
+  .fantasies-room-right {
+    display: none;
+  }
+}
