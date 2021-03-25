@@ -12,7 +12,12 @@ li {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 .wrapper {
+  width: 100%;
   max-width: 1256px;
   margin: 0 auto;
 }
