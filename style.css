@@ -200,6 +200,10 @@ img {
   margin-bottom: 42px;
 }
 
+.mobile-slider {
+  display: none;
+}
+
 .page2-block1-elem {
   display: flex;
   flex-wrap: wrap;

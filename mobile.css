@@ -83,8 +83,18 @@
     text-align: center;
   }
 
+  .mobile-slider {
+    display: block;
+    margin: 0 auto;
+  }
+
   .page2-content-block2 ul {
     display: none;
+  }
+
+  .page2-block1-elem {
+    margin: 0 auto;
+    margin-top: 50px;
   }
 
   .contact-form {
@@ -159,6 +169,9 @@
   }
 
   .contact-block3 {
+  }
+
+  .background-image4 {
   }
 
   .footer {
