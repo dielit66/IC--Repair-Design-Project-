@@ -103,6 +103,8 @@ img {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  max-width: 100%;
+  height: auto;
 }
 
 .page1-title span {
@@ -307,7 +309,7 @@ img {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 817px;
+  max-width: 817px;
   margin: 0 auto;
 }
 
@@ -366,6 +368,10 @@ img {
   border: 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   outline: none;
+}
+
+.checkbox-1__mobile {
+  display: none;
 }
 
 .button3 {
@@ -864,6 +870,7 @@ img {
   align-items: center;
   padding: 34.4px 181.5px;
   margin-top: -200px;
+  max-width: 100%;
 }
 
 .contact-block3 h2 {

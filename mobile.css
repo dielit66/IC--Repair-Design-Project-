@@ -49,6 +49,10 @@
     width: 338px;
   }
 
+  .page2-content {
+    padding-top: 0;
+  }
+
   .page2-content-block1 {
     display: flex;
     flex-direction: column;
@@ -67,12 +71,61 @@
     height: fit-content;
   }
 
+  .page2-content-block1 {
+    margin: 0 auto;
+  }
+
+  .page2-content-block1 h2 {
+    text-align: center;
+  }
+
+  .page2-text-block1 {
+    text-align: center;
+  }
+
   .page2-content-block2 ul {
+    display: none;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name-input {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .phone-input {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .button3 {
+    width: 100%;
+  }
+  .checkbox-1__mobile {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .checkbox-1 {
+    display: none;
+  }
+
+  .slider {
     display: none;
   }
 
   .background-image3 {
     display: none;
+  }
+
+  .page3-video {
+    width: 90%;
   }
 
   .page3 .wrapper {
@@ -103,6 +156,9 @@
 
   .fantasies-room-right {
     display: none;
+  }
+
+  .contact-block3 {
   }
 
   .footer {
