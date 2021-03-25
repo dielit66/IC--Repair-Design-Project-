@@ -65,13 +65,30 @@
   }
 
   .page2-content-block2 img {
-    position: relative;
+    width: 10%;
+    height: 10%;
+  }
+
+  .rooms-block {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+
+    height: fit-content;
   }
 
   .page2-content-block2 ul {
     display: none;
   }
 
+  .background-image3 {
+    display: none;
+  }
+
+  .wrapper:nth-child(6) {
+    display: none;
+  }
   .page4 {
     display: none;
   }
