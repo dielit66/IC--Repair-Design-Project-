@@ -16,6 +16,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .wrapper {
   width: 100%;
   max-width: 1256px;
@@ -72,11 +73,11 @@ img {
 }
 
 .button {
-  background: #e3b873;
+  background: transparent;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 2px;
   outline: 0;
-  border: 0;
+  border: 1px solid white;
   cursor: pointer;
   padding: 13px 33px;
   color: white;
@@ -86,6 +87,13 @@ img {
   height: 37px;
   font-size: 11px;
   margin-left: 45px;
+}
+
+.button:hover {
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: 0;
 }
 
 .background-image1 {
@@ -139,15 +147,21 @@ img {
 
 .button1 {
   padding: 20px 41px;
-  background: #e3b873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  background: transparent;
   border-radius: 2px;
   font-size: 11px;
   outline: 0;
-  border: 0;
+  border: 1px solid white;
   color: white;
   margin-right: 20px;
   cursor: pointer;
+}
+
+.button1:hover {
+  background: #e3b873;
+
+  border-radius: 2px;
+  border: 0;
 }
 
 .button2 {
@@ -160,6 +174,12 @@ img {
   background: transparent;
   color: white;
   cursor: pointer;
+}
+.button2:hover {
+  background: #e3b873;
+
+  border-radius: 2px;
+  border: 0;
 }
 
 .page2 {
@@ -381,7 +401,7 @@ img {
 .button3 {
   padding: 20px 72px 20px 72px;
   background: #e3b873;
-  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+
   border-radius: 2px;
   border: 0;
   font-family: Nunito Sans;
@@ -606,10 +626,15 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background: #e3b873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  background: transparent;
+  border: 1px solid white;
   outline: none;
   cursor: pointer;
+}
+
+.button4:hover {
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   border: 0;
 }
 
@@ -721,6 +746,10 @@ img {
 .clients-title {
   text-align: center;
   margin-bottom: 40px;
+}
+.clients-title img {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cl-title {
@@ -956,13 +985,21 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  background: #e3b873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  background: transparent;
   outline: none;
   cursor: pointer;
-  border: 0;
-
+  border: 1px solid white;
   margin-top: 51px;
+}
+
+.button5:hover {
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  border: 0;
+}
+
+.mobile-slider1 {
+  display: none;
 }
 
 .contact-info {
@@ -998,6 +1035,10 @@ img {
   margin-top: 430px;
 }
 
+.contact-info-mobile {
+  display: none;
+}
+
 .footer {
   background-color: black;
   margin: 0;
@@ -1009,4 +1050,64 @@ img {
   font-size: 11px;
   height: 133px;
   text-transform: uppercase;
+}
+
+.checkbox-1 {
+}
+
+INPUT[type="text"] {
+  color: white;
+}
+
+.input-name1::-webkit-input-placeholder {
+  color: white;
+}
+
+.input-phone1::-webkit-input-placeholder {
+  color: white;
+}
+
+.input-email1::-webkit-input-placeholder {
+  color: white;
+}
+
+.name-input1::-webkit-input-placeholder {
+  color: white;
+}
+.phone-input1::-webkit-input-placeholder {
+  color: white;
+}
+.question-input1::-webkit-input-placeholder {
+  color: white;
+}
+
+/*checkbox */
+.own_checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.custom_checkbox {
+  position: absolute;
+  margin-top: 0.3em;
+  margin-left: -1.2em;
+
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #e3b873;
+  border-radius: 0.05em;
+  background-repeat: no-repeat;
+}
+
+/* checked */
+
+.own_checkbox:checked + .custom_checkbox {
+  background-color: #e3b873;
+  background-image: url(svg/Vector.svg);
+}
+
+/* focused */
+.own_checkbox:focus + .custom_checkbox {
+  box-shadow: 0 0 0 0.1em #000, 0 0 0 0.2 #e3b873;
 }
