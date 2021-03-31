@@ -11,6 +11,9 @@ body * {
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 
 img {
   max-width: 100%;
@@ -40,6 +43,7 @@ img {
   text-decoration: none;
   color: white;
   margin-right: 47px;
+  text-decoration: none !important;
 }
 
 .nav-link:hover {
@@ -70,6 +74,10 @@ img {
 
 .phone {
   color: #e3b873;
+}
+
+.phone:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -143,6 +151,9 @@ img {
   font-size: 22px;
   line-height: 36px;
   margin-bottom: 21px;
+}
+
+.page1-buttons {
 }
 
 .button1 {
@@ -227,7 +238,7 @@ img {
 .page2-block1-elem {
   display: flex;
   flex-wrap: wrap;
-  width: 370px;
+  max-width: 370px;
   justify-content: space-between;
   margin-bottom: 45px;
 }
