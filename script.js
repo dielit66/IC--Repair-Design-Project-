@@ -41,6 +41,10 @@ const firstImg = document.querySelector('.first-selector')
 const secondImg = document.querySelector('.second-selector')
 const thirdImg = document.querySelector('.third-selector')
 
+const firstSelector = document.querySelector('#city-selector1')
+const secondSelector = document.querySelector('#city-selector2')
+const thirdSelector = document.querySelector('#city-selector3')
+
 
 let currentIndex = 0
 
@@ -49,11 +53,13 @@ prev.addEventListener('click', () => {
   setEntity(currentIndex - 1);
   currentIndex -= 1;
   setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
 })
 next.addEventListener('click', () => {
   setEntity(currentIndex + 1);
   currentIndex += 1;
   setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
 })
 
 
@@ -61,18 +67,22 @@ next.addEventListener('click', () => {
   setEntity(0);
   currentIndex = 0;
   setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
 })
 secondImg.addEventListener('click', () => {
   setEntity(1);
   currentIndex = 1;
   setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
 })
 thirdImg.addEventListener('click', () => {
   setEntity(2);
   currentIndex = 2;
   setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
   
 }) 
+
 
 
 function setFillOpacity(currentIndex){
@@ -91,19 +101,41 @@ function setFillOpacity(currentIndex){
   }
 }
 
-function setChosenCity(currentIndex){
+
+
+firstSelector.addEventListener('click', () => {
+  setEntity(0);
+  currentIndex = 0;
+  setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
+})
+secondSelector.addEventListener('click', () => {
+  setEntity(1);
+  currentIndex = 1;
+  setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
+})
+thirdSelector.addEventListener('click', () => {
+  setEntity(2);
+  currentIndex = 2;
+  setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
+  
+}) 
+
+function setChosenCity(currentIndex) {
   if(currentIndex === 0){
-  path1.style.fillOpacity = "1";
-  path2.style.fillOpacity = "0.3";
-  path3.style.fillOpacity = "0.3";
-  } else if(currentIndex === 1){
-  path1.style.fillOpacity = "0.3";
-  path2.style.fillOpacity = "1";
-  path3.style.fillOpacity = "0.3";
-  } else if(currentIndex === 2){
-  path1.style.fillOpacity = "0.3";
-  path2.style.fillOpacity = "0.3";
-  path3.style.fillOpacity = "1";
-  }
+  firstSelector.style.color = "#e3b873";
+  secondSelector.style.color = "rgba(255, 255, 255, 0.3)"
+  thirdSelector.style.color = "rgba(255, 255, 255, 0.3)"
+} else if(currentIndex === 1){
+  firstSelector.style.color = "rgba(255, 255, 255, 0.3)";
+  secondSelector.style.color = "#e3b873";
+  thirdSelector.style.color = "rgba(255, 255, 255, 0.3)";
+} else if(currentIndex === 2){
+  firstSelector.style.color = "rgba(255, 255, 255, 0.3)";
+  secondSelector.style.color = "rgba(255, 255, 255, 0.3)";
+  thirdSelector.style.color = "#e3b873";
+}
 }
 
