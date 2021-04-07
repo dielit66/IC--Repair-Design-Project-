@@ -87,18 +87,18 @@
               <div class="page2-block1-elem">
                 <div class="elements">
                   <h3>City</h3>
-                  <p>
+                  <p id="city-text">
                     Rostov-on-Don <br />
                     LCD admiral
                   </p>
                 </div>
                 <div class="elements">
                   <h3>Apartment Area:</h3>
-                  <p>81 m2</p>
+                  <p id="area-text">81 m2</p>
                 </div>
                 <div class="elements">
                   <h3>Repair time:</h3>
-                  <p>3.5 months</p>
+                  <p id="repair-text">3.5 months</p>
                 </div>
                 <div class="elements" style="margin-right: 49px">
                   <h3>Repair Cost:</h3>
@@ -107,7 +107,7 @@
               </div>
               <div class="slider">
                 <svg
-                  class="slider-elements"
+                  class="slider-elements prev"
                   width="42"
                   height="14"
                   viewBox="0 0 42 14"
@@ -129,7 +129,26 @@
                 </svg>
 
                 <svg
-                  class="slider-elements"
+                  class="slider-elements first-selector"
+                  width="10"
+                  height="11"
+                  viewBox="0 0 10 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.163879"
+                    y="0.45636"
+                    width="9.56667"
+                    height="9.56667"
+                    rx="4.78333"
+                    fill="white"
+                    fill-opacity="1"
+                    id="path1"
+                  />
+                </svg>
+                <svg
+                  class="slider-elements second-selector"
                   width="10"
                   height="11"
                   viewBox="0 0 10 11"
@@ -144,10 +163,11 @@
                     rx="4.78333"
                     fill="white"
                     fill-opacity="0.3"
+                    id="path2"
                   />
                 </svg>
                 <svg
-                  class="slider-elements"
+                  class="slider-elements third-selector"
                   width="10"
                   height="11"
                   viewBox="0 0 10 11"
@@ -162,28 +182,11 @@
                     rx="4.78333"
                     fill="white"
                     fill-opacity="0.3"
+                    id="path3"
                   />
                 </svg>
                 <svg
-                  class="slider-elements"
-                  width="10"
-                  height="11"
-                  viewBox="0 0 10 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.163879"
-                    y="0.45636"
-                    width="9.56667"
-                    height="9.56667"
-                    rx="4.78333"
-                    fill="white"
-                    fill-opacity="0.3"
-                  />
-                </svg>
-                <svg
-                  class="slider-elements"
+                  class="slider-elements next"
                   width="42"
                   height="14"
                   viewBox="0 0 42 14"
@@ -207,11 +210,11 @@
             </div>
             <div class="page2-content-block2">
               <ul>
-                <li>Rostov-on-Don, Admiral</li>
-                <li>Sochi Thieves</li>
-                <li>Rostov-on-Don Patriotic</li>
+                <li id="city-selector1">Rostov-on-Don, Admiral</li>
+                <li id="city-selector2">Sochi Thieves</li>
+                <li id="city-selector3">Rostov-on-Don Patriotic</li>
               </ul>
-              <img src="img/image2.jpg" alt="Фото" />
+              <img id="slider-photo" src="img/image2.jpg" alt="Фото" />
             </div>
           </div>
         </div>
@@ -1109,5 +1112,6 @@
         </div>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

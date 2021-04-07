@@ -302,6 +302,7 @@ img {
 
 .slider-elements {
   margin-right: 25px;
+  cursor: pointer;
 }
 
 .onlinecontrol-block h2 {
