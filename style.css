@@ -291,6 +291,10 @@ img {
   margin-bottom: 53px;
 }
 
+#city-selector1 {
+  color: #e3b873;
+}
+
 .page2-content-block2 ul li:hover {
   color: #e3b873;
   display: inline-block;
