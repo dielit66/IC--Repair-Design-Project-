@@ -291,7 +291,7 @@ img {
   margin-bottom: 53px;
 }
 
-#city-selector1 {
+.city-selector__active {
   color: #e3b873;
 }
 

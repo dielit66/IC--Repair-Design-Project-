@@ -37,17 +37,10 @@ const setEntity = (index) => {
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
 
-const firstImg = document.querySelector('.first-selector')
-const secondImg = document.querySelector('.second-selector')
-const thirdImg = document.querySelector('.third-selector')
-
-const firstSelector = document.querySelector('#city-selector1')
-const secondSelector = document.querySelector('#city-selector2')
-const thirdSelector = document.querySelector('#city-selector3')
-
+const pointSelector = document.querySelectorAll('.point-selector')
+const citySelector = document.querySelectorAll('.city-selector')
 
 let currentIndex = 0
-
 
 prev.addEventListener('click', () => {
   setEntity(currentIndex - 1);
@@ -63,19 +56,19 @@ next.addEventListener('click', () => {
 })
 
 
- firstImg.addEventListener('click', () => {
+pointSelector[0].addEventListener('click', () => {
   setEntity(0);
   currentIndex = 0;
   setFillOpacity(currentIndex);
   setChosenCity(currentIndex);
 })
-secondImg.addEventListener('click', () => {
+pointSelector[1].addEventListener('click', () => {
   setEntity(1);
   currentIndex = 1;
   setFillOpacity(currentIndex);
   setChosenCity(currentIndex);
 })
-thirdImg.addEventListener('click', () => {
+pointSelector[2].addEventListener('click', () => {
   setEntity(2);
   currentIndex = 2;
   setFillOpacity(currentIndex);
@@ -103,19 +96,19 @@ function setFillOpacity(currentIndex){
 
 
 
-firstSelector.addEventListener('click', () => {
+citySelector[0].addEventListener('click', () => {
   setEntity(0);
   currentIndex = 0;
   setFillOpacity(currentIndex);
   setChosenCity(currentIndex);
 })
-secondSelector.addEventListener('click', () => {
+citySelector[1].addEventListener('click', () => {
   setEntity(1);
   currentIndex = 1;
   setFillOpacity(currentIndex);
   setChosenCity(currentIndex);
 })
-thirdSelector.addEventListener('click', () => {
+citySelector[2].addEventListener('click', () => {
   setEntity(2);
   currentIndex = 2;
   setFillOpacity(currentIndex);
@@ -125,17 +118,18 @@ thirdSelector.addEventListener('click', () => {
 
 function setChosenCity(currentIndex) {
   if(currentIndex === 0){
-  firstSelector.style.color = "#e3b873";
-  secondSelector.style.color = "rgba(255, 255, 255, 0.3)"
-  thirdSelector.style.color = "rgba(255, 255, 255, 0.3)"
+  citySelector[0].classList.add('city-selector__active');
+  citySelector[1].classList.remove('city-selector__active');
+  citySelector[2].classList.remove('city-selector__active');
 } else if(currentIndex === 1){
-  firstSelector.style.color = "rgba(255, 255, 255, 0.3)";
-  secondSelector.style.color = "#e3b873";
-  thirdSelector.style.color = "rgba(255, 255, 255, 0.3)";
+  citySelector[0].classList.remove('city-selector__active');
+  citySelector[1].classList.add('city-selector__active');
+  citySelector[2].classList.remove('city-selector__active');
 } else if(currentIndex === 2){
-  firstSelector.style.color = "rgba(255, 255, 255, 0.3)";
-  secondSelector.style.color = "rgba(255, 255, 255, 0.3)";
-  thirdSelector.style.color = "#e3b873";
+  citySelector[0].classList.remove('city-selector__active');
+  citySelector[1].classList.remove('city-selector__active');
+  citySelector[2].classList.add('city-selector__active');
 }
 }
+
 
