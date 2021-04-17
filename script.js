@@ -18,7 +18,7 @@ const entities = [
     repairText: '3 months '
   }
 ]
-
+ 
 const cityText = document.getElementById('city-text')
 const img = document.getElementById('slider-photo')
 const areaText = document.getElementById('area-text')
@@ -42,15 +42,25 @@ const citySelector = document.querySelectorAll('.city-selector')
 
 let currentIndex = 0
 
+
 prev.addEventListener('click', () => {
-  setEntity(currentIndex - 1);
-  currentIndex -= 1;
+  if(currentIndex <= 0){
+  currentIndex = 2;
+  } else {
+  currentIndex -= 1; 
+  }
+  setEntity(currentIndex);
   setFillOpacity(currentIndex);
   setChosenCity(currentIndex);
 })
 next.addEventListener('click', () => {
-  setEntity(currentIndex + 1);
-  currentIndex += 1;
+  
+  if(currentIndex > entities.length-2){
+  currentIndex = 0;
+  } else {
+  currentIndex += 1; 
+  }
+  setEntity(currentIndex);
   setFillOpacity(currentIndex);
   setChosenCity(currentIndex);
 })
