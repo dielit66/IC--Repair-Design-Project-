@@ -39,6 +39,7 @@ const next = document.querySelector('.next')
 
 const pointSelector = document.querySelectorAll('.point-selector')
 const citySelector = document.querySelectorAll('.city-selector')
+const pathSelector = document.querySelectorAll('.path')
 
 let currentIndex = 0
 
@@ -86,25 +87,15 @@ pointSelector[2].addEventListener('click', () => {
   
 }) 
 
-
-
-function setFillOpacity(currentIndex){
-  if(currentIndex === 0){
-  path1.style.fillOpacity = "1";
-  path2.style.fillOpacity = "0.3";
-  path3.style.fillOpacity = "0.3";
-  } else if(currentIndex === 1){
-  path1.style.fillOpacity = "0.3";
-  path2.style.fillOpacity = "1";
-  path3.style.fillOpacity = "0.3";
-  } else if(currentIndex === 2){
-  path1.style.fillOpacity = "0.3";
-  path2.style.fillOpacity = "0.3";
-  path3.style.fillOpacity = "1";
-  }
+function setFillOpacity(currentIndex) {
+  pathSelector.forEach(function(item, index, array) {
+    if (currentIndex !== index ) {
+      item.style.fillOpacity = "0.3";
+    } else {
+      item.style.fillOpacity = "1";
+    }
+  });
 }
-
-
 
 citySelector[0].addEventListener('click', () => {
   setEntity(0);
