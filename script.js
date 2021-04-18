@@ -126,20 +126,15 @@ citySelector[2].addEventListener('click', () => {
   
 }) 
 
+
 function setChosenCity(currentIndex) {
-  if(currentIndex === 0){
-  citySelector[0].classList.add('city-selector__active');
-  citySelector[1].classList.remove('city-selector__active');
-  citySelector[2].classList.remove('city-selector__active');
-} else if(currentIndex === 1){
-  citySelector[0].classList.remove('city-selector__active');
-  citySelector[1].classList.add('city-selector__active');
-  citySelector[2].classList.remove('city-selector__active');
-} else if(currentIndex === 2){
-  citySelector[0].classList.remove('city-selector__active');
-  citySelector[1].classList.remove('city-selector__active');
-  citySelector[2].classList.add('city-selector__active');
-}
+  citySelector.forEach(function(item, index, array) {
+    if (currentIndex !== index ) {
+      item.classList.remove('city-selector__active')
+    } else {
+      item.classList.add('city-selector__active')
+    }
+  });
 }
 
 
