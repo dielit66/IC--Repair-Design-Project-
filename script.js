@@ -45,7 +45,7 @@ let currentIndex = 0
 
 prev.addEventListener('click', () => {
   if(currentIndex <= 0){
-  currentIndex = 2;
+  currentIndex = entities.length - 1;
   } else {
   currentIndex -= 1; 
   }
