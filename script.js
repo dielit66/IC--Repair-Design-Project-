@@ -33,7 +33,6 @@ const setEntity = (index) => {
   
 }
 
-
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
 
@@ -66,26 +65,25 @@ next.addEventListener('click', () => {
   setChosenCity(currentIndex);
 })
 
+pointSelector.forEach((item, index) => {
+  item.addEventListener("click", function() {
+      currentIndex = index ;
+      setEntity(currentIndex)
+      setFillOpacity(currentIndex);
+  setChosenCity(currentIndex);
+  })
+})
 
-pointSelector[0].addEventListener('click', () => {
-  setEntity(0);
-  currentIndex = 0;
-  setFillOpacity(currentIndex);
+citySelector.forEach((item, index) => {
+  item.addEventListener("click", function() {
+      currentIndex = index ;
+      setEntity(currentIndex)
+      setFillOpacity(currentIndex);
   setChosenCity(currentIndex);
+  })
 })
-pointSelector[1].addEventListener('click', () => {
-  setEntity(1);
-  currentIndex = 1;
-  setFillOpacity(currentIndex);
-  setChosenCity(currentIndex);
-})
-pointSelector[2].addEventListener('click', () => {
-  setEntity(2);
-  currentIndex = 2;
-  setFillOpacity(currentIndex);
-  setChosenCity(currentIndex);
-  
-}) 
+
+
 
 function setFillOpacity(currentIndex) {
   pathSelector.forEach(function(item, index, array) {
@@ -97,27 +95,6 @@ function setFillOpacity(currentIndex) {
   });
 }
 
-citySelector[0].addEventListener('click', () => {
-  setEntity(0);
-  currentIndex = 0;
-  setFillOpacity(currentIndex);
-  setChosenCity(currentIndex);
-})
-citySelector[1].addEventListener('click', () => {
-  setEntity(1);
-  currentIndex = 1;
-  setFillOpacity(currentIndex);
-  setChosenCity(currentIndex);
-})
-citySelector[2].addEventListener('click', () => {
-  setEntity(2);
-  currentIndex = 2;
-  setFillOpacity(currentIndex);
-  setChosenCity(currentIndex);
-  
-}) 
-
-
 function setChosenCity(currentIndex) {
   citySelector.forEach(function(item, index, array) {
     if (currentIndex !== index ) {
@@ -127,5 +104,3 @@ function setChosenCity(currentIndex) {
     }
   });
 }
-
-
